@@ -2,13 +2,13 @@
 * @Author: anchen
 * @Date:   2016-06-14 17:06:14
 * @Last Modified by:   anchen
-* @Last Modified time: 2016-06-15 09:56:04
+* @Last Modified time: 2016-06-15 10:26:55
 */
 
 #include <stdio.h>
 #include <stdlib.h>
 
-void f(int *p,int no)
+void sortNumber(int *p,int no)
 {
     int i = 0,j = 0;
     int temp;
@@ -43,7 +43,7 @@ int main()
     fclose(fp);
 
     end = i - 1;
-    f(Num,end);
+    sortNumber(Num,end);
     for( i =0 ; i < end;i ++)
     {
         printf("%d\n", Num[i]);
